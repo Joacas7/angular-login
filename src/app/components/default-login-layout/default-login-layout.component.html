@@ -1,0 +1,23 @@
+<main>
+  <section class="form-section">
+    <img src="/assets/svg/simbolo.svg" />
+    <h2>{{ title }}</h2>
+    <ng-content></ng-content>
+    <div class="btn-wrapper">
+      <button 
+      class="btn-primary" 
+      (click)="submit()"
+      [disabled]="disablePrimaryBtn"
+      >{{ primaryBtText }}</button>
+      <div class="divider">
+        <div></div>
+        <span>Ou</span>
+      </div>
+      <button class="btn-secondary" (click)="navigate()">{{ secondaryBtText }}</button>
+    </div>
+  </section>
+  <section class="main-section">
+    <h1>Plataforma de Ingressos</h1>
+    <img src="/assets/svg/simbolo.svg" />
+  </section>
+</main>
